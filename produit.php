@@ -1,15 +1,19 @@
+<?php
+if(isset($_GET['produit'])){ //Securité : produit dans la bar de recherche
+	$produit = $_GET['produit'];
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>auptitpatisse</title>
 	<link rel="stylesheet" href="media/css/style.css">
 </head>
-
 <body>
-    <header>
+<header>
 		<a href="./" class="icon"><img src="./media/images/Image.png" alt="auptitpatisse LOGO"></a>
 		<input type="checkbox" id="hamburger-menu">
 		<nav>
@@ -18,42 +22,10 @@
 			<a href="./traiteur.html"><span>Service traiteur</span><span class="hover"></span></a>
 		</nav>
 		<label for="hamburger-menu" class="hamburger"><span></span></label>
-	</header>
+</header>
 	<main>
-		<section class="carte">
-			<section>
-				<div class="type">
-					<h2>Les Menus</h2>
-				</div>
-				<div class="type">
-					<h2>Les sandwichs</h2>
-				</div>
-				<div class="type">
-					<h2>Les P'tites-faims</h2>
-				</div>
-				<div class="type">
-					<h2>Les pizzas</h2>
-				</div>
-			</section>
-			<section>
-				<div class="type">
-					<h2>Les gratins</h2>
-				</div>
-				<div class="type">
-					<h2>Les salades</h2>
-				</div>
-				<div class="type">
-					<h2>Les snacks</h2>
-				</div>
-				<div class="type">
-					<h2>Les desserts</h2>
-				</div>
-			</section>
-		</section>
-		<a href="./produit.php?produit=burger" target="_blank" >Page produit</a>
-	</main>
-    
 
+	</main>
 </body>
 
 </html>
